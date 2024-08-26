@@ -27,7 +27,7 @@ def predict(lat, lon, sst, slp):
         "slp": slp
     })
 
-    model_lat, model_lon = load_models("latitude_model.pkl", "longitude_model.pkl")
+    model_lat, model_lon = load_models("latitude_model.pkl", "models/longitude_model.pkl")
 
     delta_lat, delta_lon = predict_new_location(model_lat, model_lon, example_input)
 

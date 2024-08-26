@@ -88,4 +88,4 @@ if __name__ == "__main__":
     X_train_lon, X_test_lon, y_train_lon, y_test_lon = train_test_split(X, y_lon, test_size=0.2, random_state=42)
 
     print("Training model for delta_longitude prediction...")
-    train_and_save_model(X_train_lon, X_test_lon, y_train_lon, y_test_lon, "longitude_model.pkl")
+    train_and_save_model(X_train_lon, X_test_lon, y_train_lon, y_test_lon, "models/longitude_model.pkl")
