@@ -12,6 +12,8 @@ By analyzing environmental data such as Sea Level Pressure (SLP) and Sea Surface
 OceanTrack forecasts the changes in the longitude and latitude of plastic debris over time. 
 This helps in mapping out the future journey of plastic waste and identifying areas with a high likelihood 
 of accumulation, enabling targeted clean-up efforts and better resource allocation to combat ocean pollution.
+
+**DISCLAIMER:** Don't input parameters that are on land. The model is trained on ocean data and will not work accurately with land data.
 """)
 
 # Sidebar for parameter input
