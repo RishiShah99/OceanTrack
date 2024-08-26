@@ -12,7 +12,7 @@ slp = 1010
 lat_history = [lat]
 lon_history = [lon]
 
-for i in range(100):
+for i in range(3):
     delta_lat, delta_lon = input.predict([lat], [lon], [sst], [slp])
     lat += float(delta_lat)
     lon += float(delta_lon)
@@ -29,3 +29,6 @@ print(f"Initial Longitude: {lon_history[0]:.2f}")
 print("...")
 print(f"Final Latitude: {lat_history[-1]:.2f}")
 print(f"Final Longitude: {lon_history[-1]:.2f}")
+
+
+print(location_history)
