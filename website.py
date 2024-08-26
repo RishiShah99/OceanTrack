@@ -34,10 +34,6 @@ if st.sidebar.button("Run Prediction"):
     predicted_latitude = float(predicted_latitude)
     predicted_longitude = float(predicted_longitude)
 
-    # Display the initial prediction results
-    st.subheader("Prediction Output")
-    st.write(f"Predicted Location: Longitude {predicted_longitude:.2f}, Latitude {predicted_latitude:.2f}")
-
     # Initialize lists to store latitude and longitude values at each iteration
     lat_history = [latitude]
     lon_history = [longitude]
@@ -54,11 +50,14 @@ if st.sidebar.button("Run Prediction"):
     # Create a dictionary to store the latitude and longitude history
     location_history = {"latitude": lat_history, "longitude": lon_history}
 
+    # Create REAL-TIME map
+    st.subheader("Simulation Map")
+    st.map(location_history)
+
     # Display the final latitude and longitude compared to the initial values
+    st.subheader("Simulation Results")
     st.write(f"Initial Latitude: {lat_history[0]:.2f}")
     st.write(f"Initial Longitude: {lon_history[0]:.2f}")
     st.write("...")
     st.write(f"Final Latitude: {lat_history[-1]:.2f}")
     st.write(f"Final Longitude: {lon_history[-1]:.2f}")
-
-    st.map(location_history)
