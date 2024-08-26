@@ -1,3 +1,6 @@
+![BRO](https://github.com/RishiShah99/OceanTrack/blob/main/tn.png?raw=true)
+
+
 ## Inspiration
 The idea for **OceanTrack** began when we started thinking about the journey of plastic waste in our oceans. We wondered: what happens to these plastics once they’re dumped into the sea? How far do they travel, and can we predict where they will end up? With the devastating impact of plastic pollution on marine life and ecosystems, we realized that if we could pinpoint heavily concentrated plastic dumps, we might be able to target these areas for clean-up efforts and significantly reduce pollution. This curiosity and a strong desire to make a tangible difference inspired us to create OceanTrack, a tool to track and predict the path of ocean plastic waste.
 
